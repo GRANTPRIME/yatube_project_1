@@ -29,18 +29,3 @@ def group_posts(request, slug):
     }
     return render(request, 'posts/group_list.html', context) 
 
-#def group_posts(request, slug):
-    #group = get_object_or_404(Group, slug=slug)
-    #posts = Post.objects.filter(group=group).order_by('-pub_date')[:10]
- #   posts = Post.objects.order_by('-pub_date')[:10]
-  #  context = {
-      #  'group': group,
-   #     'posts': posts,
-      #  'text': 'Лев Толстой - не хер простой'
-    #}
-    #context = {
-     #   'text': 'Лев Толстой - не хер простой'
-    #}
-    #template = 'posts/group_list.html'
-    #return HttpResponse(f'Список групп {slug}')
-    #return render(request, template, context)
