@@ -1,0 +1,23 @@
+<!DOCTYPE html> <!-- Используется html 5 версии -->
+<html lang="ru"> <!-- Язык сайта - русский -->
+  <head>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    {% load static %}
+    <link rel='stylesheet' href='{% static 'css/bootstrap.min.css' %}'>
+  </head>
+  <body>
+    <header>
+        {% include 'includes/header.html' %}
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>       
+    <footer>
+        {% include 'includes/footer.html' %}
+    </footer>
+  </body>
+</html>
