@@ -1,1 +1,1 @@
-# yatube_project_1
+# yatube_project
